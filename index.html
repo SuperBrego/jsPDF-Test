@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teste | jsPDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        .outputTxt { display: none; }
+        .container {
+            height: 100vh;
+            margin: 0;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+        .container button {
+            width: fit-content;
+            font-size: 2rem;
+            padding: 1rem;
+            border-radius: .5rem;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+        }
+        .container button:hover {
+            letter-spacing: .5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <button onclick="runDownload()">Download PDF</button> 
+    </div>
+    <p class="outputTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec faucibus sapien, sed iaculis felis. Nulla id lorem tellus. Aenean nec augue dignissim, hendrerit enim id, ultricies lorem. Nullam sed sapien quis nunc convallis semper. Nullam eros nulla, auctor tincidunt eros non, pretium tincidunt sapien. Aenean sit amet urna vitae augue feugiat lacinia. Suspendisse lectus justo, dapibus in tortor quis, venenatis ornare erat. Aenean iaculis dui ligula, sed varius arcu dictum quis. Maecenas vehicula porta leo, eget pretium quam hendrerit ac. Sed accumsan nisi sed tortor vulputate, quis convallis metus fringilla.</p>
+    <p class="outputTxt">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce consectetur accumsan massa, nec vehicula ante euismod sed. Integer eget rhoncus ante. Vestibulum finibus, sem nec dictum semper, enim purus tempor magna, a consectetur metus ante gravida nisi. Vestibulum ac gravida metus. Sed sollicitudin diam urna, posuere blandit dolor varius id. Fusce semper, ipsum at egestas accumsan, nisi neque fringilla risus, ut vestibulum augue diam vitae magna. Aliquam in fringilla urna, a hendrerit ex. Phasellus id commodo ligula, quis egestas est. Integer in nibh convallis, ornare lacus et, placerat metus. Vivamus ut posuere lectus, sit amet commodo dui. Mauris in fringilla lorem.</p>
+    <p class="outputTxt">Sed lacinia quam a commodo bibendum. Sed egestas nunc lobortis justo porttitor facilisis. Duis est orci, euismod vel iaculis vitae, eleifend vitae leo. Cras in elementum quam, nec vulputate lacus. In sodales metus ipsum, a gravida urna accumsan quis. Suspendisse ut commodo risus. Integer fringilla semper fermentum. Suspendisse placerat tortor commodo elit pretium porttitor.</p>
+    <p class="outputTxt">Donec vehicula placerat ante, id blandit velit convallis vel. Nunc vitae luctus dolor. Phasellus dolor risus, aliquam non massa nec, fermentum blandit mauris. Etiam mattis placerat sapien at pellentesque. Duis at sapien ut augue cursus rhoncus. Aenean semper, mauris ac feugiat tincidunt, magna est aliquet risus, eget fermentum felis ante quis enim. Maecenas placerat laoreet ipsum ac feugiat. Integer sodales rutrum facilisis. In ullamcorper eros non bibendum imperdiet. Proin ac auctor quam, sit amet euismod risus. Nulla et aliquet urna. Donec neque odio, porta vitae dolor vel, pulvinar gravida arcu. Ut vel tincidunt justo, vitae euismod sem. Curabitur id sem ut sapien egestas convallis.</p>
+    <p class="outputTxt">In nec faucibus neque. Cras iaculis, neque quis egestas ullamcorper, elit tortor dictum tellus, a molestie nisi ante in ex. Praesent a neque feugiat, eleifend ligula in, viverra tellus. Proin a rhoncus ligula. Aenean aliquet ex et hendrerit blandit. Phasellus sed fermentum turpis, a imperdiet nibh. Donec sodales nulla et nisi congue, quis vestibulum diam fringilla. Aliquam dapibus tortor eu mauris cursus varius. Nunc vitae vulputate orci, nec luctus neque. Praesent aliquam faucibus dui, at blandit elit tincidunt a. Maecenas vel mauris lacus. In facilisis, ligula nec congue fringilla, turpis erat lobortis felis, at condimentum ipsum augue id odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+    <script src="script.js"></script>
+</body>
+</html>
